@@ -73,14 +73,6 @@ function renderProducts() {
         }
     }
 
-    document.querySelector('.js-cart-link').onclick = () => {
-        if (cart.cartItem.length === 0) {
-            alert('Cart page unavaliable no product in cart, add a product to your cart');
-        } else {
-            window.location.href = '../checkout.html';
-        }
-    }
-
     document.querySelectorAll('.js-add-to-cart-btn').forEach(btn => {
         btn.onclick = () => {
             const productId = btn.dataset.productId;
