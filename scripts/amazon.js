@@ -69,7 +69,7 @@ function renderProducts() {
         if (cart.cartItem.length === 0) {
             alert('Cart page unavaliable no product in cart, add a product to your cart');
         } else {
-            window.location.href = 'checkout.html';
+            window.location.href = '../checkout.html';
         }
     }
 
