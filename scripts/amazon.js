@@ -65,6 +65,14 @@ function renderProducts() {
             .innerHTML = productsHTML;
     })
 
+    document.querySelector('.js-cart-link').onclick = () => {
+        if (cart.cartItem.length === 0) {
+            alert('Cart page unavaliable no product in cart, add a product to your cart');
+        } else {
+            window.location.href = 'checkout.html';
+        }
+    }
+
     document.querySelector('.js-order-Link').onclick = () => {
         if (orders.length === 0) {
             alert('No Order Placed Recently')
